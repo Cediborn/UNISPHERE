@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unisphere — Everything Uni, One Hub</title>
+<meta name="description" content="Unisphere is the all-in-one hub for university life: timetable clash checking, GPA tracking, course resources, study groups, and more — all in one place.">
+<link rel="icon" href="images/logo_small.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,600;0,700;1,500&family=Quicksand:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- theme applied before paint to avoid flash -->
+<script>
+  (function(){
+    try {
+      var t = localStorage.getItem('unisphere_theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch(e){}
+  })();
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">
+    <img src="images/logo_small.png" alt="Unisphere logo">
+    <span>Unisphere</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#modules" class="active">Modules</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#" >Log in</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button type="button" data-theme-btn="light" aria-label="Light mode">☀ <span class="label">Light</span></button>
+      <button type="button" data-theme-btn="dark" aria-label="Dark mode">● <span class="label">Dark</span></button>
+    </div>
+    <button class="mobile-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="eyebrow-pill"><span class="dot"></span>All-in-one for university students</div>
+
+  <h1>One hub for<br><em>everything</em> uni.</h1>
+  <p class="sub">Timetable clashes, GPA tracking, course resources, study groups — Unisphere brings the tools every student juggles into a single, calm home base.</p>
+
+  <div class="cta-row">
+    <a href="#modules" class="btn btn-primary"><span class="icon-capsule">→</span>Explore modules</a>
+    <a href="apps/timetable.html" class="btn btn-ghost">Try Clash Checker</a>
+  </div>
+
+  <div class="orbit-stage" aria-hidden="true">
+    <div class="orbit-ring r1"></div>
+    <div class="orbit-ring r2"></div>
+    <div class="orbit-core"><img src="images/logo_small.png" alt=""></div>
+
+    <div class="orbit-tile t1"><span class="dot" style="background:var(--green-soft); color:var(--green);">📅</span>Timetable</div>
+    <div class="orbit-tile t2"><span class="dot" style="background:var(--accent-soft); color:var(--accent-strong);">🧮</span>GPA Tracker</div>
+    <div class="orbit-tile t3"><span class="dot" style="background:var(--accent-soft); color:var(--accent-strong);">📚</span>Resources</div>
+    <div class="orbit-tile t4"><span class="dot" style="background:var(--accent-soft); color:var(--accent-strong);">👥</span>Study Groups</div>
+    <div class="orbit-tile t5"><span class="dot" style="background:var(--accent-soft); color:var(--accent-strong);">🗓</span>Calendar</div>
+    <div class="orbit-tile t6"><span class="dot" style="background:var(--accent-soft); color:var(--accent-strong);">⭐</span>Reviews</div>
+  </div>
+</header>
+
+<section class="panel" id="modules">
+  <div class="section-head">
+    <h2>Every module, one login</h2>
+    <p>Built one at a time — start with what's live, and check back as new modules ship.</p>
+  </div>
+
+  <div class="module-grid">
+    <div class="module-card">
+      <div class="top-row">
+        <div class="glyph">📅</div>
+        <span class="status-pill is-live"><span class="dot">●</span>Live</span>
+      </div>
+      <h3>Timetable &amp; Clash Checker</h3>
+      <p>Add your course groups and times — instantly see overlapping classes on a weekly board.</p>
+    </div>
+
+    <div class="module-card">
+      <div class="top-row">
+        <div class="glyph">🧮</div>
+        <span class="status-pill is-soon"><span class="dot">○</span>Coming soon</span>
+      </div>
+      <h3>GPA Tracker</h3>
+      <p>Log grades by course, see your cumulative GPA, and simulate next semester's targets.</p>
+    </div>
+
+    <div class="module-card">
+      <div class="top-row">
+        <div class="glyph">📚</div>
+        <span class="status-pill is-soon"><span class="dot">○</span>Coming soon</span>
+      </div>
+      <h3>Course Resource Vault</h3>
+      <p>Past questions, notes, and syllabi organized by course code.</p>
+    </div>
+
+    <div class="module-card">
+      <div class="top-row">
+        <div class="glyph">👥</div>
+        <span class="status-pill is-soon"><span class="dot">○</span>Coming soon</span>
+      </div>
+      <h3>Study Group Finder</h3>
+      <p>Post or join a study session, clash-checked against your own timetable automatically.</p>
+    </div>
+
+    <div class="module-card">
+      <div class="top-row">
+        <div class="glyph">🗓</div>
+        <span class="status-pill is-soon"><span class="dot">○</span>Coming soon</span>
+      </div>
+      <h3>Academic Calendar</h3>
+      <p>Registration windows, exam periods, and add/drop deadlines in one place.</p>
+    </div>
+
+    <div class="module-card">
+      <div class="top-row">
+        <div class="glyph">⭐</div>
+        <span class="status-pill is-soon"><span class="dot">○</span>Coming soon</span>
+      </div>
+      <h3>Course Reviews</h3>
+      <p>Honest, anonymous notes on workload and teaching style from students who've taken it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="about">
+  <div class="section-head">
+    <h2>Why one hub</h2>
+    <p>Most student tools solve one problem and stop there. Unisphere started as a single timetable checker — it's growing into the place students open first, for everything else that comes with a semester.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>Unisphere — built for students, by a student.</span>
+  <span><a href="#">Privacy</a> · <a href="#">About</a> · <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></span>
+</footer>
+
+<script src="theme.js"></script>
+</body>
+</html>
